@@ -1,5 +1,5 @@
 async function buscarEquipe() {
-  const response = await fetch('http://localhost:3000/api/v1/equipes');
+  const response = await fetch('https://fila-aleatoria.onrender.com/api/v1/equipes');
   const data = await response.json();
   const equipe = data.equipes;
   const container = document.getElementById('container');
