@@ -1,8 +1,11 @@
 async function buscarEquipe() {
+  const container = document.getElementById('container');
+  const loader = document.createElement('div');
+  loader.classList.add('loader');
+  container.appendChild(loader);
   const response = await fetch('https://fila-aleatoria.onrender.com/api/v1/equipes');
   const data = await response.json();
   const equipe = data.equipes;
-  const container = document.getElementById('container');
   container.innerHTML = '';
 
   for (let i = 0; i < equipe.length; i++) {
