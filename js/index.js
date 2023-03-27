@@ -21,7 +21,7 @@ async function buscarEquipe() {
     // Back Header
     const image = document.createElement('img');
     image.classList.add('pp');
-    image.src = '../images/dev_icon.jpg';
+    image.src = 'https://banner2.cleanpng.com/20180514/gre/kisspng-computer-icons-avatar-user-profile-clip-art-5af95fab3b2d13.0220186015262923952424.jpg';
     const hDoisB = document.createElement('h2');
     hDoisB.innerText = `${equipe[i].nome}`;
     const cardHeader = document.createElement('div');
